@@ -1,0 +1,53 @@
+@import "../../../styles/colors";
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: inherit;
+
+  .logo {
+    width: 100%;
+    height: 200px;
+
+    img {
+      display: block;
+      width: 100px;
+      height: 100px;
+      padding: 50px;
+    }
+  }
+
+  .home-link, .favorites-link {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    color: $off-white;
+    text-decoration: none;
+    font-size: 26px;
+    text-align: center;
+    line-height: 30px;
+
+    &:hover {
+      background-color: $off-white;
+      color: $off-black;
+    }
+  }
+
+  footer {
+    flex-grow: 1;
+    flex-basis: 100%;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    justify-content: center;
+    .copyleft {
+      transform: rotate(180deg);
+      font-size: 26px;
+    }
+  }
+}

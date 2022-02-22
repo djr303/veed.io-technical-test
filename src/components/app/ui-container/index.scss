@@ -1,0 +1,15 @@
+@import "../../../styles/colors";
+
+.container {
+  display: flex;
+
+  nav {
+    width: 200px;
+    height: 100vh;
+  }
+  
+  main {
+    background-color: $dark-grey;
+    flex: 1;
+  }
+}
