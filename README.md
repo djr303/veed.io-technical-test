@@ -9,3 +9,8 @@ Tested on NodeJS v16.3.1, Yarn v1.22.17 & Chrome Version 91.0.4472.114 (Official
 ### To install dependencies and run locally:
 
 `$ yarn && yarn start`
+
+
+### To run tests:
+
+`$ yarn test`
