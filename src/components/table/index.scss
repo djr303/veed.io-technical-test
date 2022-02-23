@@ -61,7 +61,15 @@ table.items {
         display: block;
         width: 25px;
         height: 25px;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
+}
+
+p.none {
+  padding: 20px;
 }

@@ -1,14 +1,15 @@
-import { useMemo } from 'react'
 import Table from '../../components/table'
 
-type HomeProps = {
-  items: any
+type FavoritesProps = {
+  items: any;
+  favorites: any;
+  handleChange: (id: string) => void
 }
 
-const Home: React.FC<HomeProps> = ({ items }) => (
+const Favorites: React.FC<FavoritesProps> = ({ items, favorites, handleChange }) => (
   <>
-    <Table title="Repositories" items={items} />
+    <Table title="Favorited repositories" items={items} favorites={favorites} handleChange={handleChange} />
   </>
 )
 
-export default Home
+export default Favorites

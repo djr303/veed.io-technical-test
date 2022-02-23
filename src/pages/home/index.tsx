@@ -1,13 +1,16 @@
 import Table from '../../components/table'
 
 type HomeProps = {
-  items: any
+  items: any;
+  favorites: any;
+  handleChange: (id: string) => void
 }
 
-const Home: React.FC<HomeProps> = ({ items }) => (
+const Home: React.FC<HomeProps> = ({ items, favorites, handleChange }) => (
   <>
-    <Table items={items} title="Repositories" />
+    <Table title="Repositories" items={items} favorites={favorites} handleChange={handleChange} />
   </>
 )
+
 
 export default Home
