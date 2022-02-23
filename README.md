@@ -9,20 +9,3 @@ Tested on NodeJS v16.3.1, Yarn v1.22.17 & Chrome Version 91.0.4472.114 (Official
 ### To install dependencies and run locally:
 
 `$ yarn && yarn start`
-
-## Note on further work
-
-[ COMPLETE THIS ]
-
-# Approach
-
-[ COMPLETE THIS ]
-
-# TODOs
-
-* Table component
-* Populate table component
-* Works suitably in small windows
-* Local state for favoriting plus UI
-* Snapshot jest test for <Table /> component
-
