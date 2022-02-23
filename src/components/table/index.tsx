@@ -35,9 +35,9 @@ const Table: React.FC<TableProps> = ({ title, items, favorites, handleChange }) 
                 <td>{item.stargazers_count}</td>
                 <td>
                   {!!favorites && favorites[item.id] ? (
-                    <img onClick={() => handleChange(item.id)} src="/images/star-filled.svg" />
+                    <img data-test={item.id} onClick={() => handleChange(item.id)} src="/images/star-filled.svg" />
                   ) : (
-                    <img onClick={() => { console.log('clicked'); handleChange(item.id)}} src="/images/star-outlined.svg" />
+                    <img data-test={item.id} onClick={() => { console.log('clicked'); handleChange(item.id)}} src="/images/star-outlined.svg" />
                   )}
                 </td>
               </tr>

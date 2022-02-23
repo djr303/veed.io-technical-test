@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Table /> should render correctly when no items have been passed through to props 1`] = `
+Array [
+  <h1
+    className="table-title"
+  >
+    Test title
+  </h1>,
+  <table
+    className="items"
+  >
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Link
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Stars
+        </th>
+        <th>
+          Favorited
+        </th>
+      </tr>
+    </thead>
+    <tbody />
+  </table>,
+  <p
+    className="none"
+  >
+    <i>
+      (None)
+    </i>
+  </p>,
+]
+`;
+
+exports[`<Table /> should render correctly when there are items but and some favorites 1`] = `
+Array [
+  <h1
+    className="table-title"
+  >
+    Test title
+  </h1>,
+  <table
+    className="items"
+  >
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Link
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Stars
+        </th>
+        <th>
+          Favorited
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          test name 1
+        </td>
+        <td>
+          <a
+            href="http://www.testurl1.com"
+            target="_blank"
+          >
+            http://www.testurl1.com
+          </a>
+        </td>
+        <td>
+          Test description 1
+        </td>
+        <td>
+          100
+        </td>
+        <td>
+          <img
+            data-test={1}
+            onClick={[Function]}
+            src="/images/star-filled.svg"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          test name 2
+        </td>
+        <td>
+          <a
+            href="http://www.testurl2.com"
+            target="_blank"
+          >
+            http://www.testurl2.com
+          </a>
+        </td>
+        <td>
+          Test description 2
+        </td>
+        <td>
+          200
+        </td>
+        <td>
+          <img
+            data-test={2}
+            onClick={[Function]}
+            src="/images/star-outlined.svg"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          test name 3
+        </td>
+        <td>
+          <a
+            href="http://www.testurl3.com"
+            target="_blank"
+          >
+            http://www.testurl3.com
+          </a>
+        </td>
+        <td>
+          Test description 3
+        </td>
+        <td>
+          300
+        </td>
+        <td>
+          <img
+            data-test={3}
+            onClick={[Function]}
+            src="/images/star-outlined.svg"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+]
+`;
+
+exports[`<Table /> should render correctly when there are items but no favorites 1`] = `
+Array [
+  <h1
+    className="table-title"
+  >
+    Test title
+  </h1>,
+  <table
+    className="items"
+  >
+    <thead>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Link
+        </th>
+        <th>
+          Description
+        </th>
+        <th>
+          Stars
+        </th>
+        <th>
+          Favorited
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          test name 1
+        </td>
+        <td>
+          <a
+            href="http://www.testurl1.com"
+            target="_blank"
+          >
+            http://www.testurl1.com
+          </a>
+        </td>
+        <td>
+          Test description 1
+        </td>
+        <td>
+          100
+        </td>
+        <td>
+          <img
+            data-test={1}
+            onClick={[Function]}
+            src="/images/star-outlined.svg"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          test name 2
+        </td>
+        <td>
+          <a
+            href="http://www.testurl2.com"
+            target="_blank"
+          >
+            http://www.testurl2.com
+          </a>
+        </td>
+        <td>
+          Test description 2
+        </td>
+        <td>
+          200
+        </td>
+        <td>
+          <img
+            data-test={2}
+            onClick={[Function]}
+            src="/images/star-outlined.svg"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          test name 3
+        </td>
+        <td>
+          <a
+            href="http://www.testurl3.com"
+            target="_blank"
+          >
+            http://www.testurl3.com
+          </a>
+        </td>
+        <td>
+          Test description 3
+        </td>
+        <td>
+          300
+        </td>
+        <td>
+          <img
+            data-test={3}
+            onClick={[Function]}
+            src="/images/star-outlined.svg"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>,
+]
+`;
