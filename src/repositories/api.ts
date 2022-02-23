@@ -8,5 +8,6 @@ const FETCH_CONFIG: RequestInit = {
 };
 
 export const repositories = async () => {
-  return await fetch(`${API_ENDPOINT}`, { ...FETCH_CONFIG });
+  const response = await fetch(`${API_ENDPOINT}`, { ...FETCH_CONFIG });
+  return await response.json()
 };

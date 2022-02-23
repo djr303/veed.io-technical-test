@@ -4,14 +4,14 @@ const initialState: any = {
   images: null,
 };
 
-export const requestRepositories = "requestFolders";
-export const requestRepositoriesSuccess = "requestFoldersSuccess";
+export const requestRepositories = "requestRepositories";
+export const requestRepositoriesSuccess = "requestRepositorySuccess";
 
 const repositoryReducer = (state = initialState, action: any) => {
   switch (action.type) {
     case requestRepositoriesSuccess:
       const repositories = action.payload;
-      return { ...state, ...repositories }
+      return { ...state, repositories }
     default:
       return state;
   }
